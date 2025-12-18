@@ -486,6 +486,7 @@ class SilktideCookieBanner {
       this.showBackdrop();
       this.hideCookieIcon();
       this.removeBanner();
+      this.preventBodyScroll();
 
       // Focus the close button
       const modalCloseButton = this.modal.querySelector('.modal-close');
@@ -506,6 +507,7 @@ class SilktideCookieBanner {
 
       this.hideBackdrop();
       this.showCookieIcon();
+      this.allowBodyScroll();
 
       // Trigger optional onPreferencesClose callback
       if (typeof this.config.onPreferencesClose === 'function') {
@@ -768,7 +770,18 @@ class SilktideCookieBanner {
     return '';
   }
 
+  preventBodyScroll() {
+    document.body.style.overflow = '';
+    // Prevent iOS Safari scrolling
+    document.body.style.position = '';
+    document.body.style.width = '';
+  }
 
+  allowBodyScroll() {
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+  }
 }
 
 (function () {
