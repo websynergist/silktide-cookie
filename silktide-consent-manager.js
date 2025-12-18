@@ -486,7 +486,7 @@ class SilktideCookieBanner {
       this.showBackdrop();
       this.hideCookieIcon();
       this.removeBanner();
-      this.preventBodyScroll();
+      // this.preventBodyScroll(); <-- removed
 
       // Focus the close button
       const modalCloseButton = this.modal.querySelector('.modal-close');
@@ -507,7 +507,7 @@ class SilktideCookieBanner {
 
       this.hideBackdrop();
       this.showCookieIcon();
-      this.allowBodyScroll();
+      // this.allowBodyScroll(); <-- removed
 
       // Trigger optional onPreferencesClose callback
       if (typeof this.config.onPreferencesClose === 'function') {
