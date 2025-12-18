@@ -20,11 +20,11 @@
               --backdropBackgroundBlur: 0px;
               --cookieIconColor: #c81c3b;
               --cookieIconBackgroundColor: #ffffff;
-              position: realtive;
+              position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: 99999;
   pointer-events: none;
   border: 0px;
