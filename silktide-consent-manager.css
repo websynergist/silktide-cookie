@@ -20,13 +20,13 @@
               --backdropBackgroundBlur: 0px;
               --cookieIconColor: #c81c3b;
               --cookieIconBackgroundColor: #ffffff;
-              position: fixed;
+              position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: 99999;
-  pointer-events: none;
+  pointer-events: auto;
   border: 0px;
   display: flex;
   justify-content: center;
